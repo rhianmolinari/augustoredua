@@ -1,0 +1,95 @@
+//
+// Definitions Wordpress
+// --------------------------------------------------
+
+.black-bg {
+	background-color: @gray-dark;
+	color: @body-bg;
+}
+
+.featured {
+	.tagline {
+		z-index: @zindex-title;
+			> h1 {
+			#gradient .vertical (@start-color: @brand-primary; @end-color: @brand-secundary; @start-percent: 0%; @end-percent: 100%);
+			color: @body-bg;
+			text-transform: lowercase;
+			//font-size: 75px;
+			padding: 10px;
+			margin: 0px;
+		}
+	}
+}
+
+.scroll {
+	background-image: url('../images/scroll.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 95px;
+	//padding: @navbar-padding-vertical @navbar-padding-horizontal;
+}
+
+.about {
+	position:relative;
+	margin-bottom: 140px;
+	margin-top: -150px;
+	.container > .row > .text-center {
+		margin: 50px 0 20px 0;
+	}
+	.t-shape, .v-shape {
+		position: absolute;
+		.size(100%,140px);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100% 100%;
+	}
+		.t-shape {
+			background-image: url('../images/vtop-gray.png');
+			bottom: 100%;
+		}
+		.v-shape {
+			background-image: url('../images/vbottom-gray.png');
+			top: 100%;
+		}
+}
+.space-top {
+	padding-top: 70px;
+}
+.space-bottom {
+	padding-bottom: 70px;
+}
+.testimony {
+	background-color: @gray-lighter;
+	border-width: 1px 0px;
+	border-color: @input-border;
+	border-style: solid;
+	.carousel {
+		margin-top: 15px;
+		.carousel-inner .item img {
+			margin-bottom: 30px;
+		}
+	}
+}
+.result {
+	.carousel-inner > .item {
+		img,
+		a > img {
+			width: 50%;
+			float: left;
+		}
+	}
+}
+footer {
+	background-image: url('../images/bg-form.jpg');
+	background-size: 100%;
+}
+.entry-content p a {
+	padding: 1px;
+	border-bottom: 1px solid @link-color;
+	text-decoration: none;
+	.transition(all .3s);
+	&:hover {
+		background-color: @link-color;
+		color: @body-bg;
+	}
+}
