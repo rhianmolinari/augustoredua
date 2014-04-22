@@ -1,4 +1,4 @@
-augustoredua
+Augusto Rédua
 ============
 
-Tema Wordpress Augusto Rédua
+Tema Wordpress
