@@ -6,7 +6,7 @@
  */
 get_header(); ?>
 <section class="featured">
-	<div class="container">
+	<div class="container">  
 		<div class="row">
 			<div class="col-md-8 col-md-push-2 col-md-pull-2">
 				<img class="img-responsive" src="<?php bloginfo('template_url'); ?>/images/augusto-redua.png">
